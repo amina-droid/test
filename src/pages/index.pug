@@ -1,0 +1,46 @@
+extends ../components/layout/layout.pug
+
+block hui
+    .container
+        .row
+            .col-xs-12.col-sm-6.col-md-6.col-lg-4
+                include ../components/recipe/recipe.pug
+            .col-xs-12.col-sm-6.col-lg-4
+                .a-card.a-card_login
+                    .header.header-thin
+                        .header__title.a-card__title_upercase Login
+                    .main
+                        form(name='info_log-pass').main__form
+                            label(for="e-m")Email
+                            input(type="email" id="e-m" name="email").form__input.form__input_email
+                            br
+                            label(for="pas")Password
+                            input(type="password" id="pass" name="pass").form__input.form__input_pas
+                        .main__span-line
+                            span Or
+                    .footer
+                        .footer__social-media
+                            .tw
+                            .goog
+                            .fb
+            .col-xs-12.col-sm-6.col-lg-4
+                .a-card.a-card_profile
+                    .header.header_thin
+                        .header__title.a-card__title_upercase Profile
+                    .main
+                        .main__photo
+                            .p-profile
+                        .info
+                            div John Doe
+                            div
+                                img(src="..//images/loc.png")
+                                New York, NY
+                        .main__follows
+                            .follows__block.follows__block_following
+                                ._title Following
+                                ._amount 345
+                            .follows__block.follows__block_followers
+                                ._title Followers
+                                ._amount 498
+                        .main__button-follow
+                            input(type="submit" name="follow" value="FOLLOW")

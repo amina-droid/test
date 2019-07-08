@@ -1,0 +1,262 @@
+* {
+    /* font-family: "ProximaNova-Regular"; */
+     color: rgb(255, 255, 255);
+ }
+ 
+ body {
+     background: url(../images/bg.png) no-repeat;
+     background-size: cover;
+     background-color: blueviolet;
+     
+ }
+ 
+ .a-card {
+     border-radius: 10px;
+     overflow: hidden;
+     background-color: rgba(255,255,255, 0.2);
+     border: 1px solid rgba(255,255,255, 0.1);
+     margin-top: 20px;
+ }
+ .a-card__title_upercase{
+     text-transform: uppercase;
+ }
+ .header_bold{
+     background: url(../images/header_recipe.png) no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: flex-end;
+     height: 200px;
+     width: 100%;
+ }
+ .a-card_login .main{
+     display: flex;
+     flex-grow: 1;
+ }
+ .a-card_recipe .main__menu{
+     padding: 0;
+     margin: 0;
+     width: 100%;
+ }
+ a-card_recipe{
+     justify-content: flex-start;
+ }
+ 
+ .a-card_recipe .main > ul > li{
+     font-size: 16px;
+     text-align: left;
+     list-style: none;
+     display: block;
+     width: 100%;
+     position: relative;
+     padding: 15px;
+     border-bottom: 1px solid rgba(255,255,255, 0.4);
+     border-left: 5px solid transparent;
+ }
+ .a-card_recipe .main > ul > li:last-of-type{
+     border-bottom: none;
+ }
+ .a-card_recipe .main > ul > li:hover{
+     background-color: rgba(255,255,255, 0.3);
+     border-left: 5px solid white;
+     transition: 0.2s;
+ }
+ 
+ li::after{
+     position: absolute;
+     opacity: .3;
+     right: 20px;
+ }
+ li:hover::after{
+     opacity: 1;
+ }
+ 
+ .settings::after{
+     right: 17px;
+     content: url(../images/set.png);
+ }
+ .location::after{
+     content: url(../images/loc.png);
+ }
+ 
+ .favourite::after{
+     content: url(../images/fav.png);
+ }
+ 
+ .food::after{
+     content: url(../images/food.png);
+ }
+ 
+ .a-card__title{
+     font-size: 17px;
+     line-height: normal;
+     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.004);
+     margin-left: 10px;
+ }
+ .a-card__title:first-of-type{
+     margin-bottom: 0;
+     font-weight: bold;
+ }
+ 
+ .header_thin,
+ .a-card_login .footer{
+     background-color: #6e6ab1;
+     height: 50px;
+     width: 100%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+ 
+ .a-card._profile > .header-thin{
+     background-color: #b47859;
+ }
+ .a-card_login .main__form,
+ .a-card_login > .main{
+     display: flex;
+     flex-direction: column;
+     margin: 5% 10%;
+ }
+ .a-card_login .main__form{
+     margin: 0;
+ }
+ .a-card_login .form__input{
+     border: 1px solid rgba(255,255,255, 0.4);
+     border-radius: 10px;
+     background-color: rgba(255,255,255, 0.2);
+     min-height: 50px;
+     padding: 10px;
+ }
+ .a-card_login .form__input:focus{
+     outline:none;
+     background-color: rgba(255,255,255, 0.4);   
+ }
+ 
+ .main__span-line {
+     text-align: center;
+     padding-top: 15px;
+     overflow: hidden;
+     font-weight: normal;
+     width: 100%;
+ }
+ .main__span-line > span {
+     position: relative;
+     padding: 0 15px;
+     display: inline-block;
+ }
+ .main__span-line > span:before, .main__span-line > span:after {
+     content:"";
+     width: calc(100% + 100px);
+     border-top: 1px solid rgba(255,255,255, 0.4);
+     position: absolute;
+     right: 100%;
+     top: 50%;
+     margin-top: -2px;
+ }
+ .main__span-line > span:after {
+     left: 100%;
+ }
+ 
+ .a-card_login .footer{
+     background-color: rgba(255,255,255, 0.4);
+     display: block;
+ }
+ .a-card_login .footer__social-media{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 100%;
+ }
+ .a-card_login .footer__social-media > div{
+     width: 31px;
+     height: 31px;
+     background-position: center;
+     background-clip: content-box;
+     padding: 2px;
+     border: 2px solid rgb(255,255,255);
+     border-radius: 100%;
+ }
+ .a-card_login .footer__social-media > div:hover{
+     transform: scale(1.2);
+ }
+ .tw{
+     background: url(../images/tw.png) no-repeat;
+     
+ }
+ .goog{
+     background: url(../images/goog.png) no-repeat;
+ }
+ .fb{
+     background: url(../images/fb.png) no-repeat;
+ }
+ .a-card_profile .main__photo > div{
+     padding: 10px;
+     margin: 30px 0;
+ }
+ .a-card_profile .main__photo{
+     background: url(../images/bg-photo.png) no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+ }
+ .a-card_profile .main{
+     display: flex;
+     flex-direction: column;
+ }
+ .a-card_profile .p-profile{
+     background: url(../images/photo.png) no-repeat;
+     height: 90px;
+     width: 90px;
+ }
+ .a-card_profile .info img{
+     height: 13px;
+     width: 10px;
+     margin-top: -4px;
+ }
+ 
+ .a-card_profile .main__follows{
+     display: flex;
+     justify-content: space-around;
+     margin: 20px;
+ 
+ }
+ .a-card_profile .follows__block{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+ }
+ 
+ ._amount{
+     font-size: 30px;
+ }
+ .a-card_profile .follows__block_following{
+     border-right: 1px solid rgba(255,255,255, 0.4);
+ }
+ .main__button-follow{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .main__button-follow > input{
+     border: 1px solid rgba(255,255,255, 0.4);
+     border-radius: 10px;
+     background-color: rgba(255,255,255, 0.4);
+     height: 50px;
+     width: 100%;
+     margin: 0 10% 5%;
+     
+ }
+ .main__button-follow > input:focus{
+     border: 1px solid rgba(255,255,255, 0.4);
+     outline:none;
+ }
+ .main__button-follow > input:hover{
+     transform: scale(0.9);
+     transition-duration: 0.3s;
+ }
