@@ -1,0 +1,70 @@
+.a-card_recipe{
+    justify-content: flex-start;
+
+    .header_bold{
+        background: url(../../../src/static/img/header_recipe.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        height: 200px;
+        width: 100%;
+    }
+    .main{
+        &__menu{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            li{
+                font-size: 16px;
+                text-align: left;
+                list-style: none;
+                display: block;
+                width: 100%;
+                position: relative;
+                padding: 15px;
+                border-bottom: 1px solid rgba(255,255,255, 0.4);
+                border-left: 5px solid transparent;
+
+                &:last-of-type{
+                    border-bottom: none;
+                }
+                &:hover{
+                    background-color: rgba(255,255,255, 0.3);
+                    border-left: 5px solid white;
+                    transition: 0.2s;
+
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+                &::after{
+                    position: absolute;
+                    opacity: 0.3;
+                }
+                .settings{
+                    &::after{
+                        right: 17px;
+                        content: url(../../images/set.png);
+                    }
+                }
+                .location{
+                    &::after{
+                        content: url(../../images/loc.png);
+                    }
+                }
+                .favourite{
+                    &::after{
+                        content: url(../../images/fav.png);
+                    }
+                }
+                .food{
+                    &::after{
+                        content: url(../../images/food.png);
+                    }
+                }
+            }
+        }
+    }
+}

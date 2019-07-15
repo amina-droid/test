@@ -1,0 +1,88 @@
+.a-card_login{
+    .main{
+        flex-grow: 1;
+        margin: 5% 10%;
+
+        &__form{
+            margin: 0;
+            .form__input{
+                border: 1px solid rgba(255,255,255, 0.4);
+                border-radius: 10px;
+                background-color: rgba(255,255,255, 0.2);
+                min-height: 50px;
+                padding: 10px;
+
+                &:focus{
+                    outline:none;
+                    background-color: rgba(255,255,255, 0.4); 
+                }
+            }
+        }
+        &__span-line{
+            text-align: center;
+            padding-top: 15px;
+            overflow: hidden;
+            font-weight: normal;
+            width: 100%;
+
+            > span{
+                position: relative;
+                padding: 0 15px;
+                display: inline-block;
+
+                &::before, &::after{
+                    content:"";
+                    width: calc(100% + 100px);
+                    border-top: 1px solid rgba(255,255,255, 0.4);
+                    position: absolute;
+                    right: 100%;
+                    top: 50%;
+                    margin-top: -2px;
+                }
+                &::after{
+                    left: 100%;
+                }
+            }
+        }
+    }
+    .footer{
+        background-color: rgba(255,255,255, 0.4);
+        display: block;
+
+        &__social-media{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+
+            > div{
+                width: 31px;
+                height: 31px;
+                background-position: center;
+                background-clip: content-box;
+                padding: 2px;
+                border: 2px solid rgb(255,255,255);
+                border-radius: 100%;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            .tw{
+                background: url(../../src/static/img/tw.png) no-repeat;  
+            }
+            .goog{
+                background: url(../../src/static/img/goog.png) no-repeat;
+            }
+            .fb{
+                background: url(../../src/static/img/fb.png) no-repeat;
+            }
+        }
+    }
+}
+
+.a-card_login .main,
+.a-card_login .main__form{
+    display: flex;
+    flex-direction: column;
+}
