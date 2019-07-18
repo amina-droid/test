@@ -17,6 +17,24 @@
                     background-color: rgba(255,255,255, 0.4); 
                 }
             }
+            .but_sign-in{
+                border-radius: 10px;
+                height: 50px;
+                width: 100%;
+                margin: auto;
+                background-color: rgba(255,255,255, 0.3);
+                border: 1px solid rgba(255,255,255, 0.4);
+        
+                &:focus, 
+                &:active{
+                    outline: none !important;
+                    border: none;
+                }
+                &:hover{
+                    transform: scale(0.9);
+                    transition-duration: 0.3s;
+                }
+            }
         }
         &__span-line{
             text-align: center;
@@ -45,6 +63,7 @@
             }
         }
     }
+    
     .footer{
         background-color: rgba(255,255,255, 0.4);
         display: block;
