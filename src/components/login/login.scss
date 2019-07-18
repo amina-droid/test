@@ -55,7 +55,19 @@
             align-items: center;
             height: 100%;
 
-            > div{
+            .tw{
+                background-image: url(../images/tw.png);
+                background-repeat: no-repeat;  
+            }
+            .goog{
+                background-image: url(../images/goog.png);
+                background-repeat: no-repeat;
+            }
+            .fb{
+                background-image: url(../images/fb.png);
+                background-repeat: no-repeat;
+            }
+            div{
                 width: 31px;
                 height: 31px;
                 background-position: center;
@@ -67,15 +79,6 @@
                 &:hover{
                     transform: scale(1.2);
                 }
-            }
-            .tw{
-                background: url(../../src/static/img/tw.png) no-repeat;  
-            }
-            .goog{
-                background: url(../../src/static/img/goog.png) no-repeat;
-            }
-            .fb{
-                background: url(../../src/static/img/fb.png) no-repeat;
             }
         }
     }

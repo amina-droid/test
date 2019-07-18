@@ -2,7 +2,7 @@
     justify-content: flex-start;
 
     .header_bold{
-        background: url(../../../src/static/img/header_recipe.png) no-repeat;
+        background: url(../images/header_recipe.png) no-repeat;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -41,27 +41,28 @@
                 }
                 &::after{
                     position: absolute;
+                    right: 20px;
                     opacity: 0.3;
                 }
-                .settings{
+                &.settings{
                     &::after{
                         right: 17px;
-                        content: url(../../images/set.png);
+                        content: url(../images/set.png);
                     }
                 }
-                .location{
+                &.location{
                     &::after{
-                        content: url(../../images/loc.png);
+                        content: url(../images/loc.png);
                     }
                 }
-                .favourite{
+                &.favourite{
                     &::after{
-                        content: url(../../images/fav.png);
+                        content: url(../images/fav.png);
                     }
                 }
-                .food{
+                &.food{
                     &::after{
-                        content: url(../../images/food.png);
+                        content: url(../images/food.png);
                     }
                 }
             }
