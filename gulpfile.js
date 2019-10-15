@@ -19,7 +19,7 @@ const files = {
     scssPath: 'src/static/scss/common.scss',
     pagesPath: 'src/pages/*.pug',
     imagePath: 'src/static/img/*',
-    jsPath: 'src/static/js/main.js'
+    jsPath: 'src/static/js/'
 }
 
 const clean = () => {
@@ -48,7 +48,7 @@ const pug = () => {
 
 const js = () => {
     return src(files.jsPath)
-        .pipe(_concat('build.js'))
+        .pipe(_concat('main.js'))
         .pipe(_uglify())
         .pipe(dest('dist/js'))
 }
